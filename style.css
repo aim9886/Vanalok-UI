@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #7CFC9A;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: white;
+  color: #0a4d3c;
+  text-decoration: none;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  background: #063d2b;
+  color: white;
+  padding: 100px 80px;
+}
+
+/* ASPIRATION */
+.aspiration {
+  display: flex;
+  background: #7a3b1c;
+  color: white;
+  padding: 100px 80px;
+}
+
+/* WORK */
+.work {
+  background: #6a2c91;
+  color: white;
+  padding: 100px 80px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.work-box h3 {
+  color: #ffd700;
+}
+
+/* CONTACT */
+.contact {
+  padding: 100px 40px;
+  background: lightsalmon;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+form button {
+  padding: 12px;
+  background: #0a4d3c;
+  color: white;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about, .aspiration {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
