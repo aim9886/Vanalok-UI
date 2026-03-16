@@ -151,10 +151,113 @@ footer {
 }
 
 /* RESPONSIVE */
+
+/* MOBILE VIEW (Phones) */
 @media (max-width: 768px) {
-  .about, .aspiration {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 12px 20px;
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  /* HERO SECTION */
+  .hero-content h1 {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    flex-direction: column;
+    padding: 60px 20px;
     text-align: center;
+  }
+
+  /* ASPIRATION SECTION */
+  .aspiration {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  /* WORK SECTION */
+  .work {
+    padding: 60px 20px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-box h3 {
+    font-size: 18px;
+  }
+
+  /* CONTACT SECTION */
+  .contact {
+    padding: 60px 20px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+}
+
+
+/* @media (max-width: 268px) {
+  .about, .aspiration, .navbar {
+    padding: 12px 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-links {
@@ -163,5 +266,6 @@ footer {
 
   .work-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-}
+} */
